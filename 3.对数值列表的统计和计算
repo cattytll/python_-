@@ -1,4 +1,4 @@
-函数min(),最小值
+1.函数min(),最小值
 max()，最大值
 sum()，求和
 比如
@@ -24,3 +24,14 @@ Sum=500000500000
 注意：
 1.str(min(numbers))
 2.括号成对出现，别弄掉了。
+
+2.平方：
+squares=[]
+for value in range(1,11):
+    squares.append(value**2)
+print(squares)
+
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+3.立方：
+value**3即可。
