@@ -1,0 +1,40 @@
+0.引例
+>>> for magician in magicians:
+	print(magician)
+
+alice
+david
+carolina
+
+有关第一行代码的名称，建议才用单数和复数名称，用以区别。
+比如
+for cat in cats:
+for dog in dogs:
+for item in list_of_items:
+
+代码进化版
+
+>>> magicians=['alice','david','carolina']
+>>> for magician in magicians:
+	print(magician.title()+", that was a great trick!"+"\n"+"I can not wait to see your next trick!\n")
+
+	
+Alice, that was a great trick!
+I can not wait to see your next trick!
+
+David, that was a great trick!
+I can not wait to see your next trick!
+
+Carolina, that was a great trick!
+I can not wait to see your next trick!
+
+for后面，没有缩进的代码只执行一次。（这个要在文档里面弄好后再运行，直接编译器里不行）
+magicians=['alice','david','carolina']
+for magician in magicians:
+    print(magician.title()+", I like your show so much!")
+print("Thank you all.")
+
+Alice, I like your show so much!
+David, I like your show so much!
+Carolina, I like your show so much!
+Thank you all.
