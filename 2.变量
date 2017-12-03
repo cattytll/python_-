@@ -1,0 +1,25 @@
+文件名是：hello.py
+
+变量：
+>>> message="Hello,world"
+>>> print(message)
+Hello,world
+
+在程序中，可以随时修改变量的值，py将始终记录变量的最新值。
+message="Hello Python world!"
+print(message)
+message=("Hello world!")
+print(message)
+输出的是
+Hello Python world!
+Hello world!
+
+变量的命名和使用：
+只能包含数字，字母，下划线。
+不能以数字开头
+不能包含空格
+不能使用py关键字和函数名
+变量要简短又具有描述性
+慎用看起来易混淆的字符
+变量名使用小写，虽然大写也没有错误
+
