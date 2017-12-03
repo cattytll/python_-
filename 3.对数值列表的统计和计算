@@ -9,3 +9,18 @@ sum()，求和
 100
 >>> sum(digits)
 385
+
+
+应用举例：
+numbers=list(range(1,1000001))
+print("Min="+str(min(numbers)))
+print("Max="+str(max(numbers)))
+print("Sum="+str(sum(numbers)))
+
+Min=1
+Max=1000000
+Sum=500000500000
+
+注意：
+1.str(min(numbers))
+2.括号成对出现，别弄掉了。
