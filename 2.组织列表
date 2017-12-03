@@ -1,0 +1,52 @@
+1.使用方法sort()对列表进行永久性排序
+>> cars=['bmw','audi','toyata','subaru','Cegema']
+>>> cars.sort()
+>>> print(cars)
+['Cegema', 'audi', 'bmw', 'subaru', 'toyata']
+
+>>> cars.sort(reverse=True)
+>>> print(cars)
+['toyata', 'subaru', 'bmw', 'audi', 'Cegema']
+欲使逆序排列，使用方法sort()时传递参数reverse=True即可。
+
+2.使用函数sorted()对列表进行临时排序
+>>> print(sorted(cars))
+['Cegema', 'audi', 'bmw', 'subaru', 'toyata']
+
+>>> print(sorted(cars,reverse=True))
+['toyata', 'subaru', 'bmw', 'audi', 'Cegema']
+
+>>> print(cars)
+['bmw', 'audi', 'toyata', 'subaru', 'Cegema']
+
+注意：sort()是方法，sorted()是函数。
+del是语句，remove,pot是方法。
+
+3.倒着打印列表（不是按着字母倒序，而是反转原排序）
+cars=['bmw','audi','toyata','subaru']
+print(cars)
+
+cars.reverse()
+print(cars)
+
+cars.reverse()
+print(cars)
+
+['bmw', 'audi', 'toyata', 'subaru']
+['subaru', 'toyata', 'audi', 'bmw']
+['bmw', 'audi', 'toyata', 'subaru']
+
+reverse是永久性更改。
+但随时可以恢复到原来的排列顺序，只要再用一次reverse()方法即可。
+
+4.确定列表长度。
+用函数len()
+PY计算列表元素的时候从1开始数的。不用担心
+>>> cars=['bmw','audi','toyata','subaru','Cegema']
+>>> len(cars)
+5
+>>> print(len(cars))
+5
+
+4.使用列表时，避免索引错误。
+索引的数字不要超过列表的长度-1.注意是从0开始数的。
