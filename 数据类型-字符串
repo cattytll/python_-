@@ -1,0 +1,99 @@
+类型一：字符串
+字符串是一系列字符。
+用单引号或者双引号括起来
+这很灵活，可以轻松地在字符串中包括“  ’  符号
+比如
+>>> print(message)
+I told my friend,"py" is my favorite language!"
+>>> message='"i love you",i told him'
+>>> print(message)
+"i love you",i told him
+
+字符串的使用
+1.使用”方法“修改其中单词的大小写。
+例如
+>>> name='ada lovelace'
+>>> print(name.title())
+Ada Lovelace
+
+“方法”是py可以对数据执行的操作。
+在上面的例子中，name.title()中，name后面的句点.让py对变量name执行方法title()指定的操作。
+每个"方法“后面都跟着一对括号，因为方法通常需要额外的信息来完成工作。这个信息在括号内提供。不需要额外信息时，括号内就是空的。
+
+几种方法的介绍：
+title() 以首字母大写的方式显示每个单词
+upper() 字符串全部改为大写
+lower() 字符串全部改成小写
+例如
+>>> print(name.upper())
+ADA LOVELACE
+>>> print(name.lower())
+ada lovelace
+存储数据时，lower很有用。显示的时候再调整就可以了。
+
+2.拼接字符串
+用加号即可
+注意字符串要用引号括起来，变量不用
+例如
+>>> first_name='Tan'
+>>> last_name='Lu'
+>>> full_name=first_name+' '+last_name
+>>> print(full_name)
+Tan Lu
+
+例如
+>>> first_name='tan'
+>>> last_name='lu'
+>>> full_name=first_name.title()+' '+last_name.title()
+>>> print("hello,"+full_name+'!')
+hello,Tan Lu!
+
+3.空白
+空白是什么？？？
+空白泛指任何非打印字符
+包括空格，制表符，换行符
+
+3.1制表符\t
+>>> message='\tpython'
+>>> print(message)
+	python
+  
+3.2换行符\n
+>>> print("You\nare\nmy\nsunshine\n")
+You
+are
+my
+sunshine
+
+组合使用\t\n
+>>> print("\n\thello")
+
+	hello
+>>> print("\t\nhello")
+	
+hello
+
+3.3删除空白
+使用方法lstrip()，删除字符串开头的空白。
+rstrip(),删除字符末尾的空白
+strip(),删除开头和末尾的空白
+例如
+>>> favorite_person='	Zhou hui      hui     '
+>>> favorite_person
+'\tZhou hui      hui     '
+>>> favorite_person.lstrip()
+'Zhou hui      hui     '
+>>> favorite_person.rstrip()
+'\tZhou hui      hui'
+>>> favorite_person.strip()
+'Zhou hui      hui'
+
+注意，这种删除只是暂时的。要永久性的改变，请使用：
+favorite_person=favorite_person.strip()等方法
+
+
+
+
+
+
+
