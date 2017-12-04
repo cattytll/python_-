@@ -1,0 +1,83 @@
+1.切片
+列表的部分元素，称为切片。
+使用举例：
+>>> players=['chales','martina','michael','florence','eli']
+>>> print(players[0:3])
+['chales', 'martina', 'michael']
+>>> print(players[0:])
+['chales', 'martina', 'michael', 'florence', 'eli']
+>>> print(players[2:])
+['michael', 'florence', 'eli']
+>>> print(players[:-2])
+['chales', 'martina', 'michael']
+>>> print(players[2:3])
+['michael']
+
+2.遍历切片：在for循环中使用切片。
+>>> players=['chales','martina','michael','florence','eli']
+>>> for player in players[:3]:
+	print(player.title())
+
+	
+Chales
+Martina
+Michael
+
+3.复制列表
+使用[:]来复制
+为什么不直接用等于？
+因为等于是永久的，而[:]是一次性的。
+
+例子
+>>> my_foods=['apple','banana','pineapple']
+>>> friend_foods=my_foods[:]
+
+>>> print(my_foods)
+['apple', 'banana', 'pineapple']
+>>> print("My favorite food are : "+str(my_foods))
+My favorite food are : ['apple', 'banana', 'pineapple']
+>>> 
+
+>>> my_foods=['apple','banana','pineapple']
+>>> friend_foods=my_foods[:]
+
+>>> print("My food list is : "+str(my_foods))
+My food list is : ['apple', 'banana', 'pineapple']
+
+>>> print("My friend's food list is : "+str(friend_foods))
+My friend's food list is : ['apple', 'banana', 'pineapple']
+
+>>> my_foods.append('beef')
+>>> print(my_foods)
+['apple', 'banana', 'pineapple', 'beef']
+
+>>> print(friend_foods)
+['apple', 'banana', 'pineapple']
+
+>>> friend_foods.pop(0)
+'apple'
+>>> print(friend_foods)
+['banana', 'pineapple']
+
+若直接使用等于，行不通。修改就绑定了，永久一样了。
+例子
+>>>my_foods=['apple','banana','pineapple']
+>>> friend_foods=my_foods
+>>> print(my_foods)
+['apple', 'banana', 'pineapple']
+>>> print(friend_foods)
+['apple', 'banana', 'pineapple']
+
+>>> my_foods.pop(1)
+'banana'
+>>> print(my_foods)
+['apple', 'pineapple']
+>>> print(friend_foods)
+['apple', 'pineapple']
+
+>>> friend_foods.append('pork')
+>>> print(my_foods)
+['apple', 'pineapple', 'pork']
+你看，这里就关联了。
+
+
