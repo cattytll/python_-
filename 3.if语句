@@ -1,0 +1,34 @@
+1.简单的if语句：只有一个测试和一个操作
+>>> age=19
+>>> if age >=18:
+	print('You are old enough to vote!')
+
+	
+You are old enough to vote!
+
+如果测试通过了，将执行if语句后面所有缩进的代码行。否则将忽略他们。
+
+在紧跟在if语句后面的代码块中，可以根据需要包含任意数量的代码行。
+比如
+>>> age=19
+>>> if age >=18:
+	print('You are old enough to vote!')
+	print('Have you registered to vote yet?')
+
+	
+You are old enough to vote!
+Have you registered to vote yet?
+
+2.if-else语句：
+和简单的if语句相比，不仅可以执行通过条件测试的操作，还可以执行条件没有通过时的操作。
+
+例如
+age=17
+if age >=18:
+    print('You are old enough to vote!')
+else:
+    print('Sorry,you are too young to vote.')
+    
+    Sorry,you are too young to vote.
+    
+    3.
